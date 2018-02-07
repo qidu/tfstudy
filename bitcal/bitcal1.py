@@ -34,7 +34,7 @@ for iter in xrange(10000):
     #print syn0
     # forward propagation
     l0 = X
-    l1 = nonlin(np.dot(l0,syn0)) # [4x3] . [3x1] = [4x1], and then elemtns are normalized to (0,1)
+    l1 = nonlin(np.dot(l0,syn0)) # [4x3] . [3x1] = [4x1], connect l0 to l1 by synapse
 
     # how much did we miss?
     l1_error = y - l1
